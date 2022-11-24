@@ -26,11 +26,11 @@ defineProps({
       </div>
       <div class="item type">
         <icon :name="data.type1" />
-        <span>{{ data.type1 }}</span>
+        <span class="label">{{ data.type1 }}</span>
       </div>
       <div class="item type">
         <icon :name="data.type2 || data.type1" />
-        <span>{{ data.type2 || data.type1 }}</span>
+        <span class="label">{{ data.type2 || data.type1 }}</span>
       </div>
       <div class="item height">
         <span class="value">{{ data.height_m }}</span>
@@ -96,8 +96,9 @@ defineProps({
     width: 25px;
     height: 25px;
   }
-  span {
+  .label {
     font-size: 8px;
+    margin-top: 2px;
   }
 }
 .generation {
